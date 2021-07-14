@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eventpack", "eventpack\eventpack.vcxproj", "{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuv", "libuv\libuv.vcxproj", "{00CCD7A5-03D3-4629-9482-DEDC675C3DDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "malloc", "malloc\malloc.vcxproj", "{47D04440-FFB9-4C19-A5E8-29161EFEE920}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bson", "bson\bson.vcxproj", "{3468473C-BE84-45C6-9EDC-B7B5816A215D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bzip2", "bzip2\bzip2.vcxproj", "{00CF3BE3-67A6-4F00-9230-912CD97A6039}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample", "sample\sample.vcxproj", "{CFA41FF3-4EED-485D-A992-BD644223BB4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthreads", "pthreads\pthreads.vcxproj", "{80FA6E80-07BC-42AA-B83D-6D7035B60010}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jemalloc", "jemalloc\jemalloc.vcxproj", "{0495E4DE-1637-4F03-8966-B8EE7234999C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}.Debug|Win32.Build.0 = Debug|Win32
+		{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}.Release|Win32.ActiveCfg = Release|Win32
+		{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}.Release|Win32.Build.0 = Release|Win32
+		{00CCD7A5-03D3-4629-9482-DEDC675C3DDF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00CCD7A5-03D3-4629-9482-DEDC675C3DDF}.Debug|Win32.Build.0 = Debug|Win32
+		{00CCD7A5-03D3-4629-9482-DEDC675C3DDF}.Release|Win32.ActiveCfg = Release|Win32
+		{00CCD7A5-03D3-4629-9482-DEDC675C3DDF}.Release|Win32.Build.0 = Release|Win32
+		{47D04440-FFB9-4C19-A5E8-29161EFEE920}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47D04440-FFB9-4C19-A5E8-29161EFEE920}.Debug|Win32.Build.0 = Debug|Win32
+		{47D04440-FFB9-4C19-A5E8-29161EFEE920}.Release|Win32.ActiveCfg = Release|Win32
+		{47D04440-FFB9-4C19-A5E8-29161EFEE920}.Release|Win32.Build.0 = Release|Win32
+		{3468473C-BE84-45C6-9EDC-B7B5816A215D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3468473C-BE84-45C6-9EDC-B7B5816A215D}.Debug|Win32.Build.0 = Debug|Win32
+		{3468473C-BE84-45C6-9EDC-B7B5816A215D}.Release|Win32.ActiveCfg = Release|Win32
+		{3468473C-BE84-45C6-9EDC-B7B5816A215D}.Release|Win32.Build.0 = Release|Win32
+		{00CF3BE3-67A6-4F00-9230-912CD97A6039}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00CF3BE3-67A6-4F00-9230-912CD97A6039}.Debug|Win32.Build.0 = Debug|Win32
+		{00CF3BE3-67A6-4F00-9230-912CD97A6039}.Release|Win32.ActiveCfg = Release|Win32
+		{00CF3BE3-67A6-4F00-9230-912CD97A6039}.Release|Win32.Build.0 = Release|Win32
+		{CFA41FF3-4EED-485D-A992-BD644223BB4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CFA41FF3-4EED-485D-A992-BD644223BB4F}.Debug|Win32.Build.0 = Debug|Win32
+		{CFA41FF3-4EED-485D-A992-BD644223BB4F}.Release|Win32.ActiveCfg = Release|Win32
+		{CFA41FF3-4EED-485D-A992-BD644223BB4F}.Release|Win32.Build.0 = Release|Win32
+		{80FA6E80-07BC-42AA-B83D-6D7035B60010}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80FA6E80-07BC-42AA-B83D-6D7035B60010}.Debug|Win32.Build.0 = Debug|Win32
+		{80FA6E80-07BC-42AA-B83D-6D7035B60010}.Release|Win32.ActiveCfg = Release|Win32
+		{80FA6E80-07BC-42AA-B83D-6D7035B60010}.Release|Win32.Build.0 = Release|Win32
+		{0495E4DE-1637-4F03-8966-B8EE7234999C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0495E4DE-1637-4F03-8966-B8EE7234999C}.Debug|Win32.Build.0 = Debug|Win32
+		{0495E4DE-1637-4F03-8966-B8EE7234999C}.Release|Win32.ActiveCfg = Release|Win32
+		{0495E4DE-1637-4F03-8966-B8EE7234999C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

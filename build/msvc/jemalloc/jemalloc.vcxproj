@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\arena.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\atomic.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\base.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\bitmap.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\chunk.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\chunk_dss.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\chunk_mmap.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\ckh.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\ctl.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\extent.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\hash.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\huge.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\jemalloc_internal.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\mb.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\mutex.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\private_namespace.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\prng.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\prof.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\ql.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\qr.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\quarantine.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\rb.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\rtree.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\size_classes.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\stats.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\tcache.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\tsd.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\internal\util.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\jemalloc.h" />
+    <ClInclude Include="..\3rdparty\jemalloc\include\jemalloc\jemalloc_defs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\arena.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\atomic.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\base.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\bitmap.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\chunk.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\chunk_dss.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\chunk_mmap.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\ckh.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\ctl.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\extent.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\hash.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\huge.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\jemalloc.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\mb.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\mutex.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\prof.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\quarantine.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\rtree.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\stats.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\tcache.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\tsd.c" />
+    <ClCompile Include="..\..\..\3rdparty\jemalloc\src\util.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0495E4DE-1637-4F03-8966-B8EE7234999C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>jemalloc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\3rdparty\jemalloc\include\jemalloc;..\3rdparty\jemalloc\include;..\3rdparty\jemalloc\include\msvc_compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

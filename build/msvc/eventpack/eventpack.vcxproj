@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\ep_alloctor.c" />
+    <ClCompile Include="..\..\..\src\ep_buffer.c" />
+    <ClCompile Include="..\..\..\src\ep_cert.c" />
+    <ClCompile Include="..\..\..\src\ep_client.c" />
+    <ClCompile Include="..\..\..\src\ep_compress.c" />
+    <ClCompile Include="..\..\..\src\ep_crypt.c" />
+    <ClCompile Include="..\..\..\src\ep_dispatch.c" />
+    <ClCompile Include="..\..\..\src\ep_io.c" />
+    <ClCompile Include="..\..\..\src\ep_packet.c" />
+    <ClCompile Include="..\..\..\src\ep_queue.c" />
+    <ClCompile Include="..\..\..\src\ep_request.c" />
+    <ClCompile Include="..\..\..\src\ep_ringbuffer.c" />
+    <ClCompile Include="..\..\..\src\ep_service.c" />
+    <ClCompile Include="..\..\..\src\ep_service_libuv.c" />
+    <ClCompile Include="..\..\..\src\ep_threadpool.c" />
+    <ClCompile Include="..\..\..\src\ep_util.c" />
+    <ClCompile Include="dllmain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\ep_alloctor.h" />
+    <ClInclude Include="..\..\..\include\ep_buffer.h" />
+    <ClInclude Include="..\..\..\include\ep_client.h" />
+    <ClInclude Include="..\..\..\include\ep_compress.h" />
+    <ClInclude Include="..\..\..\include\ep_crypt.h" />
+    <ClInclude Include="..\..\..\include\ep_packet.h" />
+    <ClInclude Include="..\..\..\include\ep_queue.h" />
+    <ClInclude Include="..\..\..\include\ep_request.h" />
+    <ClInclude Include="..\..\..\include\ep_ringbuffer.h" />
+    <ClInclude Include="..\..\..\include\ep_service.h" />
+    <ClInclude Include="..\..\..\include\ep_threadpool.h" />
+    <ClInclude Include="..\..\..\include\ep_util.h" />
+    <ClInclude Include="..\..\..\include\eventpack.h" />
+    <ClInclude Include="..\..\..\src\ep_cert.h" />
+    <ClInclude Include="..\..\..\src\ep_client_struct.h" />
+    <ClInclude Include="..\..\..\src\ep_dispatch.h" />
+    <ClInclude Include="..\..\..\src\ep_io.h" />
+    <ClInclude Include="..\..\..\src\ep_shell.h" />
+    <ClInclude Include="..\..\..\utils\htonll.h" />
+    <ClInclude Include="..\..\..\utils\list.h" />
+    <ClInclude Include="..\..\..\utils\queue.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bson\bson.vcxproj">
+      <Project>{3468473c-be84-45c6-9edc-b7b5816a215d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\bzip2\bzip2.vcxproj">
+      <Project>{00cf3be3-67a6-4f00-9230-912cd97a6039}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\jemalloc\jemalloc.vcxproj">
+      <Project>{0495e4de-1637-4f03-8966-b8ee7234999c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libuv\libuv.vcxproj">
+      <Project>{00ccd7a5-03d3-4629-9482-dedc675c3ddf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\malloc\malloc.vcxproj">
+      <Project>{47d04440-ffb9-4c19-a5e8-29161efee920}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\pthreads\pthreads.vcxproj">
+      <Project>{80fa6e80-07bc-42aa-b83d-6d7035b60010}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{795ACC2D-354B-4C8D-813C-2806FDCEFBEC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>eventpack</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>inline=_inline;WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;USE_DL_PREFIX;MONGO_HAVE_STDINT;MONGO_STATIC_BUILD;PTW32_STATIC_LIB;EP_HAVE_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\utils;..\..\..\3rdparty\pthreads\pthreads.2;..\..\..\3rdparty\libuv\include;..\..\..\3rdparty\libev;..\..\..\3rdparty\malloc;..\..\..\3rdparty\bzip2;..\..\..\3rdparty\bson\src;..\..\..\utils\msvc;..\..\..\include;..\3rdparty\openssl\include;..\3rdparty\jemalloc\include\jemalloc;..\3rdparty\jemalloc\include;..\3rdparty\jemalloc\include\msvc_compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3rdparty\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;psapi.lib;iphlpapi.lib;libeay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>eventpack.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;USE_DL_PREFIX;MONGO_HAVE_STDINT;MONGO_STATIC_BUILD;PTW32_STATIC_LIB;EP_HAVE_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Visual Leak Detector\include;..\..\..\utils;..\..\..\3rdparty\pthreads\pthreads.2;..\openssl\include;..\..\..\3rdparty\libuv\include;..\..\..\3rdparty\malloc;..\..\..\3rdparty\bzip2;..\..\..\3rdparty\bson\src;..\..\..\utils\msvc;..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;..\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;psapi.lib;iphlpapi.lib;libeay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>eventpack.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
